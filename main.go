@@ -158,5 +158,5 @@ func main() {
 		http.Handle("/", http.FileServer(http.Dir(*editorPath)))
 	}
 
-	http.ListenAndServe(":" + backendPort, nil)
+	http.ListenAndServe(":" + *backendPort, nil)
 }
